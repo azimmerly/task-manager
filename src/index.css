@@ -1,0 +1,45 @@
+:root {
+  --color-primary: #6b74ff;
+  --color-green: #03c4a1;
+  --color-red: #f05454;
+  --color-black: #555;
+  --color-grey: #aaa;
+  --color-white: #fff;
+
+  --font-primary: "Lato", sans-serif;
+  --font-secondary: "Pacifico", cursive;
+
+  --font-size-huge: clamp(6rem, 5vw, 8rem);
+  --font-size-large: clamp(1.6rem, 2vw, 2.4rem);
+  --font-size-medium: clamp(1.3rem, 1.2vw, 1.7rem);
+
+  --shadow-small: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --shadow-large: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow: overlay;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(107, 116, 255, 0.98),
+      rgba(142, 56, 255, 0.98)
+    ),
+    url("./assets/background.svg");
+}
